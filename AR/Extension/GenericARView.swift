@@ -29,6 +29,7 @@ class GenericARView: UIViewController {
     func runSession() {
         let config = ARWorldTrackingConfiguration()
         sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+        sceneView.showsStatistics = true
         sceneView.session.run(config)
     }
     

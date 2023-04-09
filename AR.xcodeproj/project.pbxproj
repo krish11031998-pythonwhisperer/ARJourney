@@ -26,6 +26,10 @@
 		EFBDA3D029E2C6160063F2D7 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3CF29E2C6160063F2D7 /* UIButton.swift */; };
 		EFBDA3D229E2C8A80063F2D7 /* SCNMatrix4.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3D129E2C8A80063F2D7 /* SCNMatrix4.swift */; };
 		EFBDA3D429E2C8C60063F2D7 /* SCNVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3D329E2C8C60063F2D7 /* SCNVector3.swift */; };
+		EFBDA3D729E2C9900063F2D7 /* SolarSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3D629E2C9900063F2D7 /* SolarSystem.swift */; };
+		EFBDA3D929E2CAB70063F2D7 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3D829E2CAB70063F2D7 /* Int.swift */; };
+		EFBDA3DB29E2CFF50063F2D7 /* SCNAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3DA29E2CFF50063F2D7 /* SCNAction.swift */; };
+		EFBDA3DD29E2D0640063F2D7 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3DC29E2D0640063F2D7 /* Planets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		EFBDA3CF29E2C6160063F2D7 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		EFBDA3D129E2C8A80063F2D7 /* SCNMatrix4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNMatrix4.swift; sourceTree = "<group>"; };
 		EFBDA3D329E2C8C60063F2D7 /* SCNVector3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNVector3.swift; sourceTree = "<group>"; };
+		EFBDA3D629E2C9900063F2D7 /* SolarSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolarSystem.swift; sourceTree = "<group>"; };
+		EFBDA3D829E2CAB70063F2D7 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		EFBDA3DA29E2CFF50063F2D7 /* SCNAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNAction.swift; sourceTree = "<group>"; };
+		EFBDA3DC29E2D0640063F2D7 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,7 @@
 		EF6B23A629DF163400351676 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EFBDA3D529E2C9620063F2D7 /* SolarSystem */,
 				EFBDA3CB29E2BCF10063F2D7 /* DrawingAR */,
 				EF6B23C429E0CEB100351676 /* VideoPlayer */,
 				EF6B238B29DCB48900351676 /* ViewController.swift */,
@@ -142,8 +151,19 @@
 				EFBDA3CF29E2C6160063F2D7 /* UIButton.swift */,
 				EFBDA3D129E2C8A80063F2D7 /* SCNMatrix4.swift */,
 				EFBDA3D329E2C8C60063F2D7 /* SCNVector3.swift */,
+				EFBDA3D829E2CAB70063F2D7 /* Int.swift */,
+				EFBDA3DA29E2CFF50063F2D7 /* SCNAction.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EFBDA3D529E2C9620063F2D7 /* SolarSystem */ = {
+			isa = PBXGroup;
+			children = (
+				EFBDA3D629E2C9900063F2D7 /* SolarSystem.swift */,
+				EFBDA3DC29E2D0640063F2D7 /* Planets.swift */,
+			);
+			path = SolarSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,15 +244,19 @@
 				EF6B239C29DCCB6B00351676 /* TableAR.swift in Sources */,
 				EF6B238829DCB48900351676 /* AppDelegate.swift in Sources */,
 				EFBDA3D229E2C8A80063F2D7 /* SCNMatrix4.swift in Sources */,
+				EFBDA3D729E2C9900063F2D7 /* SolarSystem.swift in Sources */,
 				EFBDA3CD29E2BD220063F2D7 /* DrawingAR.swift in Sources */,
 				EF6B23A029DE02D600351676 /* ARPositioning.swift in Sources */,
 				EF6B23A829DF168500351676 /* MainTableViewController.swift in Sources */,
+				EFBDA3DB29E2CFF50063F2D7 /* SCNAction.swift in Sources */,
 				EF6B23A529DE036400351676 /* ViewHierachy.swift in Sources */,
 				EF6B238A29DCB48900351676 /* SceneDelegate.swift in Sources */,
 				EF6B23A229DE031400351676 /* GenericARView.swift in Sources */,
 				EF6B23C629E0CEC200351676 /* ChromaFilter.swift in Sources */,
 				EFBDA3D029E2C6160063F2D7 /* UIButton.swift in Sources */,
 				EFBDA3D429E2C8C60063F2D7 /* SCNVector3.swift in Sources */,
+				EFBDA3D929E2CAB70063F2D7 /* Int.swift in Sources */,
+				EFBDA3DD29E2D0640063F2D7 /* Planets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
