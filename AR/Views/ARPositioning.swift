@@ -89,8 +89,5 @@ class ARPositioningViewController: GenericARView {
         sceneView.scene.rootNode.childNodes.forEach { $0.removeFromParentNode() }
         sceneView.session.run(ARWorldTrackingConfiguration(), options: [.resetTracking, .removeExistingAnchors])
     }
-    
-    private func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
-     return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
-    }
+
 }

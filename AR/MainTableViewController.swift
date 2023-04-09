@@ -16,6 +16,7 @@ enum Pages: String, CaseIterable {
     case videoPlayer = "Video Player"
     case drawer = "Drawing in AR"
     case solarSystem = "Solar System"
+    case game = "AR Game"
 }
 
 extension Pages {
@@ -33,6 +34,8 @@ extension Pages {
             return DrawingARApp()
         case .solarSystem:
             return SolarSystem()
+        case .game:
+            return ARGameViewController()
         }
     }
 }

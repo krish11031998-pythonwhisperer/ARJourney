@@ -30,6 +30,9 @@
 		EFBDA3D929E2CAB70063F2D7 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3D829E2CAB70063F2D7 /* Int.swift */; };
 		EFBDA3DB29E2CFF50063F2D7 /* SCNAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3DA29E2CFF50063F2D7 /* SCNAction.swift */; };
 		EFBDA3DD29E2D0640063F2D7 /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3DC29E2D0640063F2D7 /* Planets.swift */; };
+		EFBDA3E029E2F7C90063F2D7 /* ArGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3DF29E2F7C90063F2D7 /* ArGameViewController.swift */; };
+		EFBDA3EA29E2FFC30063F2D7 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EFBDA3E929E2FFC30063F2D7 /* art.scnassets */; };
+		EFBDA3EC29E30A5C0063F2D7 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBDA3EB29E30A5C0063F2D7 /* CGFloat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +61,9 @@
 		EFBDA3D829E2CAB70063F2D7 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		EFBDA3DA29E2CFF50063F2D7 /* SCNAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNAction.swift; sourceTree = "<group>"; };
 		EFBDA3DC29E2D0640063F2D7 /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		EFBDA3DF29E2F7C90063F2D7 /* ArGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArGameViewController.swift; sourceTree = "<group>"; };
+		EFBDA3E929E2FFC30063F2D7 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		EFBDA3EB29E30A5C0063F2D7 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 				EF6B239229DCB48900351676 /* LaunchScreen.storyboard */,
 				EF6B239529DCB48900351676 /* Info.plist */,
 				EF6B23A729DF168500351676 /* MainTableViewController.swift */,
+				EFBDA3E929E2FFC30063F2D7 /* art.scnassets */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 		EF6B23A629DF163400351676 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EFBDA3DE29E2F7B90063F2D7 /* ARGame */,
 				EFBDA3D529E2C9620063F2D7 /* SolarSystem */,
 				EFBDA3CB29E2BCF10063F2D7 /* DrawingAR */,
 				EF6B23C429E0CEB100351676 /* VideoPlayer */,
@@ -153,6 +161,7 @@
 				EFBDA3D329E2C8C60063F2D7 /* SCNVector3.swift */,
 				EFBDA3D829E2CAB70063F2D7 /* Int.swift */,
 				EFBDA3DA29E2CFF50063F2D7 /* SCNAction.swift */,
+				EFBDA3EB29E30A5C0063F2D7 /* CGFloat.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -164,6 +173,14 @@
 				EFBDA3DC29E2D0640063F2D7 /* Planets.swift */,
 			);
 			path = SolarSystem;
+			sourceTree = "<group>";
+		};
+		EFBDA3DE29E2F7B90063F2D7 /* ARGame */ = {
+			isa = PBXGroup;
+			children = (
+				EFBDA3DF29E2F7C90063F2D7 /* ArGameViewController.swift */,
+			);
+			path = ARGame;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +246,7 @@
 				EF6B238F29DCB48900351676 /* Main.storyboard in Resources */,
 				EF6B23C829E0E00B00351676 /* testVideoTwo.mp4 in Resources */,
 				EF6B23C329E0CE1B00351676 /* testVideoOne.mp4 in Resources */,
+				EFBDA3EA29E2FFC30063F2D7 /* art.scnassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFBDA3EC29E30A5C0063F2D7 /* CGFloat.swift in Sources */,
 				EF6B23C129E0C90000351676 /* VideoPlayer.swift in Sources */,
 				EF6B238C29DCB48900351676 /* ViewController.swift in Sources */,
 				EF6B239C29DCCB6B00351676 /* TableAR.swift in Sources */,
@@ -251,6 +270,7 @@
 				EFBDA3DB29E2CFF50063F2D7 /* SCNAction.swift in Sources */,
 				EF6B23A529DE036400351676 /* ViewHierachy.swift in Sources */,
 				EF6B238A29DCB48900351676 /* SceneDelegate.swift in Sources */,
+				EFBDA3E029E2F7C90063F2D7 /* ArGameViewController.swift in Sources */,
 				EF6B23A229DE031400351676 /* GenericARView.swift in Sources */,
 				EF6B23C629E0CEC200351676 /* ChromaFilter.swift in Sources */,
 				EFBDA3D029E2C6160063F2D7 /* UIButton.swift in Sources */,

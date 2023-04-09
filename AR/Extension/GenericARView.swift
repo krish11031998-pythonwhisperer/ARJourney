@@ -12,7 +12,13 @@ import ARKit
 class GenericARView: UIViewController {
     
     private(set) var sceneView: ARSCNView = { .init() }()
-    
+    var showDebugOptions: Bool = false {
+        didSet {
+            if showDebugOptions {
+                sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +34,9 @@ class GenericARView: UIViewController {
     
     func runSession() {
         let config = ARWorldTrackingConfiguration()
-        sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+        if showDebugOptions {
+            sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+        }
         sceneView.showsStatistics = true
         sceneView.session.run(config)
     }
@@ -36,5 +44,13 @@ class GenericARView: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         sceneView.session.pause()
+    }
+    
+    func resetARScene(removeChildNodes: Bool = true) {
+        sceneView.session.pause()
+        if removeChildNodes {
+            sceneView.scene.rootNode.childNodes.forEach { $0.removeFromParentNode() }
+        }
+        sceneView.session.run(ARWorldTrackingConfiguration(), options: [.resetTracking, .removeExistingAnchors])
     }
 }
